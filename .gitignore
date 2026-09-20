@@ -1,0 +1,43 @@
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Environment & Secrets
+.env
+.env*.local
+*.pem
+*.key
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vercel
+
+# Python / Backend
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+venv/
+**/venv/
+.venv/
+**/.venv/
+env/
+**/env/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+*.egg-info/
