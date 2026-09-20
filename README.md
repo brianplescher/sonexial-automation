@@ -1,54 +1,8 @@
-# Sonexial Automation - Agentic GEO Scanner
+# Sonexial Automation (Retired Prototype)
 
-Full-stack application for automated Generative Engine Optimization (GEO) audits and AI pitch generation.
-
-## Project Structure
-
-```
-sonexial-automation/
-├── backend/          # FastAPI scanner and agentic outreach service
-│   ├── main.py
-│   └── requirements.txt
-└── frontend/         # Next.js UI interface
-    ├── app/
-    ├── package.json
-    └── ...
-```
-
-## Getting Started
-
-### Backend (FastAPI)
-
-1. Navigate to `backend`:
-   ```bash
-   cd backend
-   ```
-2. Create and activate a virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the API:
-   ```bash
-   uvicorn main:app --reload --port 8000
-   ```
-
-### Frontend (Next.js)
-
-1. Navigate to `frontend`:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+> [!NOTE]
+> **This standalone prototype has been retired and consolidated.**
+> The GEO scanning, SSRF protection, scoring rubric, and agentic pitch generation logic have been ported into the production **`sonexial-website`** repository:
+> - **Backend / Scanner Service**: [`agent/src/scanner.js`](https://github.com/brianplescher/sonexial-website/blob/main/agent/src/scanner.js) and [`agent/src/pitch.js`](https://github.com/brianplescher/sonexial-website/blob/main/agent/src/pitch.js)
+> - **API Endpoints**: `POST /api/scan` and `POST /api/scan/pitch` in [`agent/src/index.js`](https://github.com/brianplescher/sonexial-website/blob/main/agent/src/index.js)
+> - **Frontend Audit Tool**: [`/tools/author-geo-audit/`](https://github.com/brianplescher/sonexial-website/tree/main/tools/author-geo-audit)
